@@ -1,0 +1,280 @@
+:root{
+    --white-color: #fff;
+    --dark-color: #0b0b0b;
+    --primary-color: #2020ff;
+    --secondary-color:  #0a088a;
+    --terciary-color:  #08076a;
+    --grey-color: #c2c2c2;
+    --especial-color: #000020;
+    --border: 0.1rem solid rgb(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize; /*todos od textos começem com letra maiuscula*/
+    transition: 0.2s linear;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100%; /*imagem de fundo coupando a tela toda*/
+    background-color: var(--white-color);
+}
+
+section{
+    padding: 3rem 2rem;
+}
+
+/*estilizando a parte de cima */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header section{
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color: var(--secondary-color);
+}
+
+/*estilizando o navbar*/
+.navbar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.navbar a:hover{
+    color: var(--dark-color);
+    border-bottom: 0.1rem solid var(--dark-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.btn{
+    background: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.5rem 3rem; /*tamanho do botão*/
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block; /*respeitando a margin-top*/
+    border-radius: 3px;
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+
+/*imagem do fundo*/
+.home-container{
+    background: url("mundo.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*nomes dentro da imagem*/
+.content{
+    max-width: 90rem;
+}
+
+.content h3{
+    color: var(--white-color);
+    font-size: 5rem;
+}
+
+.content p{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 400; /*espessura do texto*/
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* estiliznado o quadrinho de sobre nós*/
+.title{
+    font-size: 4rem;
+    color: var(--terciary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.title span{
+    color:var(--dark-color);
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    gap: 1.5rem;
+    border-radius: 5px;
+}
+
+.about .row .content{
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 1rem 0 ;
+    line-height: 1.8; /*distamciamento de uma linha para outra*/
+}
+
+/*responsividade do sobre nos*/
+@media (max-width: 768px) {
+    .about .row {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+
+    .about .container-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/*caixinhas de funcionalidades*/
+
+.menu h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu h2 span{
+    color:var(--terciary-color);
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 3rem;
+    cursor: pointer;
+}
+
+
+.menu .box-container .box h3{
+    text-align: center;
+    justify-content: center;
+    color: var(--dark-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.box {
+    background: var(--grey-color);
+    padding: 1.5rem;
+    border-radius: 3px;
+    border: var(--border);
+}
+
+.menu .box-container .box:hover{
+    background-color: var(--secondary-color);
+}
+
+
+/*estilizando fundadores*/
+.review h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 1rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.review .box-container .box .user{
+    height: 100px;
+    width: 100px;
+    border-radius: 4%;
+    padding: 2rem 0  ;
+}
+
+.review .box-container .box img{
+    height: 140px;
+    width: 140px;
+    border-radius: 0.2rem;
+}
+/*estilizando imagem do instagram*/
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share img{
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover{
+    background-color: var(--grey-color);
+}

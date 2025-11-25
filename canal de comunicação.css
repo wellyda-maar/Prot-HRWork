@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    background-color:  #d2d4ea;
+}
+
+.form-box{
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(249, 249, 249);
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+
+.header{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50%;    /* Ocupa a largura total */
+    height: 10.5%;
+    background: #08076a;
+}
+
+.seta svg{
+    position: absolute;
+    left: 13px;
+    bottom: 91%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container h3{
+    position: fixed;
+    top: 5%;
+    left: 52%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    bottom: 92%;
+    z-index: 99;
+    font-size: 20px;
+}
+
+.logo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.text h2{
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    bottom: 120px;
+    font-size: 19px;
+    right: 10px;
+}
+
+
+.btn-publicacao {
+  display: flex;
+  align-items: center;
+  background-color: #08076a;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.btn-publicacao:hover{
+  background-color: #0055aa; 
+}
+
+
+.btn-publicacao span {
+  margin-right: 3px;
+}
+
+.btn-publicacao .icon {
+  background-color: #003366;
+  color: #003366;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 
+.btn {
+    position: fixed;
+    top: 85%; /* ou ajuste conforme necessário */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 100; */
+    /* background: var(--secondary-color); */
+    /* color: var(--white-color); */
+    /* padding: 0.5rem 3rem; tamanho do botão */
+    /* font-size: 1.7rem; */
+    /* cursor: pointer; */
+    /* margin-top: 1rem; */
+    /* display: inline-block; respeitando a margin-top */
+    /* border-radius: 3px; */
+/* } */
+
+/* .btn:hover{ */
+    /* letter-spacing: 0.1rem; */
+/* } */
+
+
+

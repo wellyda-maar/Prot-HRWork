@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap');
+
+:root{
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --primary: #5a7ce3;
+  --primary-2:#8f5ae9;
+  --radius: 5px;
+}
+
+* { 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+  background-color:  #d2d4ea;
+ 
+}
+
+.form-box{ 
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.screen{
+  position: fixed;
+  background: rgb(249, 249, 249);
+  top: 44%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  padding: 18px;
+
+}
+
+.monthbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:9px 12px;
+  border:1px solid var(--line);
+  border-radius: 5px;
+  background:#ffffff;
+  box-shadow: 0 1px 0 rgba(16,24,40,.04);
+  margin-bottom:14px;
+}
+
+.monthbar h2{
+  margin:0;
+  font-size:18px;
+  font-weight:500;
+  letter-spacing:0.2px;
+}
+
+
+
+/* calendario */
+.calendar{
+  
+  padding:10px;
+  background: #ffffff;
+}
+
+.cal-head, .cal-grid{
+  display:grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.cal-head div{
+  font-size:.70rem;
+  text-align:center;
+  font-weight:700;
+  letter-spacing:.15px;
+  color:#032165;
+  padding:8px;
+  border-bottom:2px solid #032165;
+  
+}
+
+.day{
+  position:relative;
+  min-height:70px;
+  background:#fefefe;
+  border:1px solid var(--line);
+  border-top:none;
+  border-left:none;
+  padding:8px 4px 12px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+  font-weight:600;
+}
+
+.day:nth-child(7n+1){
+    border-left:1px solid var(--line); 
+}
+
+.day.out{
+  color:#acacac;
+  background:#fcfdff;
+}
+
+/* barra inferior */
+.dock{
+  background-color: #032165;
+  position: fixed;
+  top:94%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:6px;
+  padding:4px;
+  border-top:1px solid rgb(255, 255, 255);
+  z-index: 99;
+}
+
+.dock .item{
+  display:grid; 
+  place-items:center; 
+  gap:6px;
+  font-size:.68rem;
+  color:#ffffff;
+  cursor: pointer;
+}
+
+
+.dock .icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+}
+
+
+
+/*.footer{
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(0, 0, 91);
+    border-top:3px solid var(--bg);
+    width: 100%;
+    z-index: 99;
+}
+
+footer.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+footer.icon svg{
+    fill: white;
+    margin-bottom: 4px;
+    transition: 0.3s;
+}
+
+footer.item:hover svg{
+    fill: cadetblue
+}
