@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcador de Ponto</title>
+  <link rel="stylesheet" href="marcador.css">
+</head>
+<body>
+
+  <!-- MAPA -->
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps?q=Picos,PI&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="conteudo">
+    <h1>MARCADOR DE PONTO:</h1>
+
+    <div class="card">
+      <p><strong>DIA:</strong> <span id="data"></span></p>
+      <p><strong>ENTRADA:</strong> <span id="inicio">--:--</span></p>
+      <p><strong>SAÍDA:</strong> <span id="final">--:--</span></p>
+    </div>
+
+    <button onclick="registrarPonto()">registrar ponto</button>
+    </div>
+
+   
+            <!-- dock inferior -->
+                <div class="dock">
+                    <div class="item active">
+                        <div class="icon">
+                            <svg width="15px" height="15px" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg>
+                            </div><span>Home</span>
+                        </div>
+
+                        <div class="item active">
+                        <a href="TELA DO CANAL DE COMUNICAÇÃO.html">
+                        <div class="icon">
+                            <svg fill="#ffffff" height="15px" width="15px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 472.615 472.615" xml:space="preserve"
+                                transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"> 
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M423.385,22.892H49.231C22.055,22.892,0,44.947,0,72.123v244.383c0,27.175,22.055,49.231,49.231,49.231h103.188 l83.889,83.988l83.889-83.988h103.188c27.175,0,49.231-22.055,49.231-49.231V72.123C472.615,44.947,450.56,22.892,423.385,22.892z M354.459,282.767H118.151v-19.692h236.308V282.767z M403.689,205.637H68.92v-19.692h334.769V205.637z M403.689,128.508H68.92 v-19.692h334.769V128.508z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        </div><span>Comun.</span>
+                   
+                    </div>
+
+                    <div class="item active">
+                        <div class="icon">
+                            <svg width="15px" height="15px" viewBox="-1 0 32 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>calendar</title>
+                                    <desc>Created with Sketch Beta.</desc>
+                                    <defs> </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                        sketch:type="MSPage">
+                                        <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                            transform="translate(-311.000000, -361.000000)" fill="#ffffff">
+                                            <path
+                                                d="M325,379 L327,379 L327,377 L325,377 L325,379 Z M325,387 L327,387 L327,385 L325,385 L325,387 Z M333,379 L335,379 L335,377 L333,377 L333,379 Z M333,387 L335,387 L335,385 L333,385 L333,387 Z M317,387 L319,387 L319,385 L317,385 L317,387 Z M339,369 L313,369 L313,367 C313,365.896 313.896,365 315,365 L319,365 L319,366 C319,366.553 319.447,367 320,367 C320.553,367 321,366.553 321,366 L321,365 L331,365 L331,366 C331,366.553 331.447,367 332,367 C332.553,367 333,366.553 333,366 L333,365 L337,365 C338.104,365 339,365.896 339,367 L339,369 L339,369 Z M337,379 C337,380.104 336.104,381 335,381 L333,381 C331.896,381 331,380.104 331,379 L331,377 C331,375.896 331.896,375 333,375 L335,375 C336.104,375 337,375.896 337,377 L337,379 L337,379 Z M337,387 C337,388.104 336.104,389 335,389 L333,389 C331.896,389 331,388.104 331,387 L331,385 C331,383.896 331.896,383 333,383 L335,383 C336.104,383 337,383.896 337,385 L337,387 L337,387 Z M329,379 C329,380.104 328.104,381 327,381 L325,381 C323.896,381 323,380.104 323,379 L323,377 C323,375.896 323.896,375 325,375 L327,375 C328.104,375 329,375.896 329,377 L329,379 L329,379 Z M329,387 C329,388.104 328.104,389 327,389 L325,389 C323.896,389 323,388.104 323,387 L323,385 C323,383.896 323.896,383 325,383 L327,383 C328.104,383 329,383.896 329,385 L329,387 L329,387 Z M321,379 C321,380.104 320.104,381 319,381 L317,381 C315.896,381 315,380.104 315,379 L315,377 C315,375.896 315.896,375 317,375 L319,375 C320.104,375 321,375.896 321,377 L321,379 L321,379 Z M321,387 C321,388.104 320.104,389 319,389 L317,389 C315.896,389 315,388.104 315,387 L315,385 C315,383.896 315.896,383 317,383 L319,383 C320.104,383 321,383.896 321,385 L321,387 L321,387 Z M337,363 L333,363 L333,362 C333,361.448 332.553,361 332,361 C331.447,361 331,361.448 331,362 L331,363 L321,363 L321,362 C321,361.448 320.553,361 320,361 C319.447,361 319,361.448 319,362 L319,363 L315,363 C312.791,363 311,364.791 311,367 L311,389 C311,391.209 312.791,393 315,393 L337,393 C339.209,393 341,391.209 341,389 L341,367 C341,364.791 339.209,363 337,363 L337,363 Z M317,379 L319,379 L319,377 L317,377 L317,379 Z"
+                                                id="calendar" sketch:type="MSShapeGroup"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div><span>Turnos</span>
+                    </div>
+
+                    <div class="item active">
+                        <a href="REUNIÃO.html">
+                        <div class="icon">
+                            <svg width="18px" height="18px" viewBox="0 0 28 28" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>icon/28/icon-userg</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs> </defs>
+                                    <g id="out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                        sketch:type="MSPage">
+                                        <path
+                                            d="M18.6666667,12.8333333 C20.6033333,12.8333333 22.155,11.27 22.155,9.33333333 C22.155,7.39666667 20.6033333,5.83333333 18.6666667,5.83333333 C16.73,5.83333333 15.1666667,7.39666667 15.1666667,9.33333333 C15.1666667,11.27 16.73,12.8333333 18.6666667,12.8333333 L18.6666667,12.8333333 L18.6666667,12.8333333 Z M9.33333333,12.8333333 C11.27,12.8333333 12.8216667,11.27 12.8216667,9.33333333 C12.8216667,7.39666667 11.27,5.83333333 9.33333333,5.83333333 C7.39666667,5.83333333 5.83333333,7.39666667 5.83333333,9.33333333 C5.83333333,11.27 7.39666667,12.8333333 9.33333333,12.8333333 L9.33333333,12.8333333 L9.33333333,12.8333333 Z M9.33333333,15.1666667 C6.615,15.1666667 1.16666667,16.5316667 1.16666667,19.25 L1.16666667,22.1666667 L17.5,22.1666667 L17.5,19.25 C17.5,16.5316667 12.0516667,15.1666667 9.33333333,15.1666667 L9.33333333,15.1666667 L9.33333333,15.1666667 Z M18.6666667,15.1666667 C18.3283333,15.1666667 17.9433333,15.19 17.535,15.225 C18.8883333,16.205 19.8333333,17.5233333 19.8333333,19.25 L19.8333333,22.1666667 L26.8333333,22.1666667 L26.8333333,19.25 C26.8333333,16.5316667 21.385,15.1666667 18.6666667,15.1666667 L18.6666667,15.1666667 L18.6666667,15.1666667 Z"
+                                            id="path" fill="#ffffff" sketch:type="MSShapeGroup"> </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        </div><span>Reunião</span>
+                    </div>
+                
+                    <div class="item active">
+                        <a href="RELATÓRIO.html">
+                        <div class="icon">
+                            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                viewBox="0 0 100 100" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M39,32h22c1.1,0,2-0.9,2-2v-4c0-3.3-2.7-6-6-6H43c-3.3,0-6,2.7-6,6v4C37,31.1,37.9,32,39,32z">
+                                            </path>
+                                        </g>
+                                        <g>
+                                            <path
+                                                d="M72,25h-2c-0.6,0-1,0.4-1,1v4c0,4.4-3.6,8-8,8H39c-4.4,0-8-3.6-8-8v-4c0-0.6-0.4-1-1-1h-2c-3.3,0-6,2.7-6,6 v43c0,3.3,2.7,6,6,6h44c3.3,0,6-2.7,6-6V31C78,27.7,75.3,25,72,25z M43,66c0,1.1-0.9,2-2,2h-2c-1.1,0-2-0.9-2-2V56 c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2V66z M53,66c0,1.1-0.9,2-2,2h-2c-1.1,0-2-0.9-2-2V47c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2V66z M63,66c0,1.1-0.9,2-2,2h-2c-1.1,0-2-0.9-2-2V51c0-1.1,0.9-2,2-2h2c1.1,0,2,0.9,2,2V66z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        </div><span>Relatório</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<script>
+firebase.auth().onAuthStateChanged((user) => {
+  if (!user) {
+    window.location.href = "tela-login.html";
+  }
+});
+</script>
+
+<script>
+
+// CONFIGURAÇÃO DA EMPRESA
+const EMPRESA_LAT = -7.0772;   // ⬅️ latitude da empresa (troque)
+const EMPRESA_LNG = -41.4669;  // ⬅️ longitude da empresa (troque)
+const RAIO_PERMITIDO = 100;    // metros permitidos
+
+// VARIÁVEIS
+let iniciado = false;
+let latitude = null;
+let longitude = null;
+
+
+// DATA ATUAL
+const dataAtual = new Date();
+document.getElementById("data").innerText =
+  dataAtual.toLocaleDateString("pt-BR");
+
+// PEGAR LOCALIZAÇÃO DO USUÁRIO
+function pegarLocalizacao() {
+  if (!navigator.geolocation) {
+    alert("Geolocalização não suportada.");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      atualizarMapa(latitude, longitude);
+    },
+    () => {
+      alert("Não foi possível obter a localização.");
+    }
+  );
+}
+
+// CALCULAR DISTÂNCIA (HAVERSINE)
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+  const R = 6371000; // raio da Terra (m)
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) *
+    Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+// REGISTRAR PONTO
+function registrarPonto() {
+  const agora = new Date().toLocaleTimeString("pt-BR");
+
+  if (latitude === null || longitude === null) {
+    alert("Aguardando localização...");
+    return;
+  }
+
+  const distancia = calcularDistancia(
+    latitude,
+    longitude,
+    EMPRESA_LAT,
+    EMPRESA_LNG
+  );
+
+  if (distancia > RAIO_PERMITIDO) {
+    alert("Você não está na empresa para registrar o ponto.");
+    return;
+  }
+
+  if (!iniciado) {
+    document.getElementById("inicio").innerText = agora;
+    iniciado = true;
+    alert("Entrada registrada com sucesso!");
+  } else {
+    document.getElementById("final").innerText = agora;
+    iniciado = false;
+    alert("Saída registrada com sucesso!");
+  }
+
+  console.log("Distância até a empresa:", distancia.toFixed(2), "m");
+}
+
+// ATUALIZAR MAPA
+function atualizarMapa(lat, lng) {
+  const iframe = document.querySelector(".mapa iframe");
+  iframe.src = `https://www.google.com/maps?q=${lat},${lng}&output=embed`;
+}
+
+// INICIAR AO ABRIR A PÁGINA
+window.onload = pegarLocalizacao;
+</script>
+
+</body>
+</html>

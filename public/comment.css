@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap');
+
+:root{
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --primary: #5a7ce3;
+  --primary-2:#8f5ae9;
+  --radius: 5px;
+}
+
+* { 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+  background-color:  #d2d4e9;
+ 
+}
+
+.form-box{ 
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50.5%;    /* Ocupa a largura total */
+    height: 10.5%;
+    background: #08076a;
+}
+
+.seta svg{
+    position: fixed;
+    left: 185px;
+    bottom: 91%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+}
+
+.container  h3{
+    position: fixed;
+    top: 1%;
+    left: 51%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    bottom: 92%;
+    z-index: 99;
+    font-size: 20px;
+}
+
+.comment{
+    width: 45%;
+    height: 20%;
+    background-color: #cfcfcf;
+    border-radius: 12px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.perfil{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    margin: 2.5%;
+}
+
+.comment{
+    flex: 1;
+    margin: 0;
+}
+
+.comment h3{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #0a0a0a;    
+}
+
+.comment h3 p{
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #555;   
+    margin: 2px; 
+}
+
+.comment h3 span{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: black;
+   
+}
+
+.botao{
+    display: flex;
+    width: 9%;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    position: fixed;
+    top: 85%;
+    left: 60%;
+    cursor: pointer;
+}
+
+
+.smile{
+    z-index: 99;
+    position: fixed;
+    top: 88%;  /*arruma o alinhamento dos simbolos */
+    left: 8%;   /*arruma o alinhamento dos simbolos */
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.clip{
+    z-index: 99;
+    position: fixed;
+    top: 88%;  /*arruma o alinhamento dos simbolos */
+    left: 16%;   /*arruma o alinhamento dos simbolos */
+    right: 0;
+    transform: translate(-50%, -50%);
+    align-items: flex-start;
+}

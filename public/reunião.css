@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap');
+
+:root{
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --primary: #5a7ce3;
+  --primary-2:#8f5ae9;
+  --radius: 5px;
+}
+
+* { 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+  background-color:  #d2d4e9;
+ 
+}
+
+.form-box{ 
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50.5%;    /* Ocupa a largura total */
+    height: 10.5%;
+    background: #08076a;
+}
+
+.seta svg{
+    position: fixed;
+    left: 185px;
+    bottom: 91%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container  h3{
+    position: fixed;
+    top: 1%;
+    left: 51%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    bottom: 92%;
+    z-index: 99;
+    font-size: 20px;
+}
+/* 
+.call svg{
+    display: flex;
+    width:%;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    position: fixed;
+    top: 85%;
+    left: 60%;
+    cursor: pointer;
+}*/
+
+.perfil{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    margin: 2.5%;
+}
+
+#box1{
+    background-color: var(--bg);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 28%;
+    top:13%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px 1px #cccccc ;
+}
+
+#box1 h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 37.5%;
+    text-align:left;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+#box2{
+    background-color: var(--bg);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 28%;
+    top:33%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px 1px #cccccc ;
+}
+
+#box2 h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 37.5%;
+    text-align:left;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+#box3{
+    background-color: var(--bg);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 28%;
+    top:53%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px 1px #cccccc ;
+}
+
+#box3 h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 37.5%;
+    text-align:left;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+#box4{
+    background-color: var(--bg);
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 28%;
+    top:73%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px 1px #cccccc;
+}
+
+#box4 h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 37.5%;
+    text-align:left;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+span{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 40%;
+    text-align:left;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.botao input{
+    z-index: 99;
+    background-color: rgba(8, 7, 106, 0.95);
+    color: black;
+    width: 300px;
+    height: 37px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 94.5%;
+    left: 50%;
+    border-radius: 12px;
+    border: #08076a;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}

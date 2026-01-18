@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600;700;800;900&display-swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    background-color:  #d2d4e9;
+}
+
+.form-box{
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(249, 249, 249);
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50.5%;    /* Ocupa a largura total */
+    height: 10.5%;
+    background: #08076a;
+}
+
+.seta svg{
+    position: fixed;
+    left: 185px;
+    bottom: 91%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.container h3{
+    position: fixed;
+    top: 5%;
+    left: 51%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    bottom: 92%;
+    z-index: 99;
+    font-size: 20px;
+}
+
+.comment{
+    width: 50.5%;
+    height: 39%;
+    background-color: #cfcfcf;
+    border-radius: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.write h2{
+    background-color: #727272;
+    color: #ffffff;
+    position: fixed;
+    top: 37%;  /*arruma o alinhamento da caixa*/
+    left: 50%;   /*arruma o alinhamento da caixa */
+    transform: translate(-50%, -50%);
+    padding: 7px 245px 7px 3px;
+    width: 47%;
+    border-radius: 10px;
+    text-align: start;
+    justify-content: flex-start;
+    font-size: 19px;
+}
+
+
+.smile {
+    z-index: 99;
+    position: fixed;
+    top: 65.6%;  /*arruma o alinhamento dos simbolos */
+    left: 51.5%;   /*arruma o alinhamento dos simbolos */
+    right: 0;
+    transform: translate(-50%, -50%);
+    align-items: flex-start;
+}
+
+.camera{
+    z-index: 99;
+    position: fixed;
+    top: 65.6%;  /*arruma o alinhamento dos simbolos */
+    left: 54.5%;  /*arruma o alinhamento dos simbolos */
+    right: 0;
+    transform: translate(-50%, -50%);
+    align-items: flex-start;
+}
+
+.clip{
+    z-index: 99;
+    position: fixed;
+    top: 65.6%;  /*arruma o alinhamento dos simbolos */
+    left: 57.5%;   /*arruma o alinhamento dos simbolos */
+    right: 0;
+    transform: translate(-50%, -50%);
+    align-items: flex-start;
+}
+
+.enviar {
+    position: fixed;
+    top: 65.6%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;          /* organiza o conteúdo */
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;            /* tamanho da área clicável */
+    height: 50px;
+    
+    cursor: pointer;
+    z-index: 99;
+}
+
+.enviar a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-10%, -10%);
+}
